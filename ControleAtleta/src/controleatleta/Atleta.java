@@ -2,7 +2,11 @@ package controleatleta;
 
 import java.util.ArrayList;
 import java.util.Date;
-
+/*
+ * Atleta.java
+ * Fonte: Material de técnicas de programação -> FGA_UnB
+ * Professor: Paulo Meirelles
+ */
 public class Atleta {
     
     ArrayList <String> telefones;
