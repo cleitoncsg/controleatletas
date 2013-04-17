@@ -19,10 +19,17 @@ public class Enxadrista extends Atleta{
     private int totalEmpates;
     private int totalDerrotas;
     private ArrayList<Premiacao> premiacoes;
-    //private ArrayList<Confronto> Enxadrista;
-    ArrayList<Enxadrista> getEnxadrista;
+    private ArrayList<Enxadrista> enxadrista;
+ 
 
-    
+    public ArrayList<Enxadrista> getEnxadrista() {
+        return enxadrista;
+    }
+
+    public void setEnxadrista(ArrayList<Enxadrista> enxadrista) {
+        this.enxadrista = enxadrista;
+    }
+      
     public Enxadrista(String nome) {
         super(nome);
    
