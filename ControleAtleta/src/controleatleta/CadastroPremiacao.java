@@ -1,7 +1,14 @@
 package controleatleta;
 
+import controleatleta.Premiacao;
+import controleatleta.Premiacao;
 import javax.swing.JOptionPane;
 
+/*
+ * CadastroPremiacao.java
+ * Fonte: Material de técnicas de programação -> FGA_UnB
+ * Professor: Paulo Meirelles
+ */
 public class CadastroPremiacao extends javax.swing.JDialog {
 
     private Premiacao premiacao;
@@ -48,7 +55,6 @@ public class CadastroPremiacao extends javax.swing.JDialog {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -68,7 +74,6 @@ public class CadastroPremiacao extends javax.swing.JDialog {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 97, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addGap(8, 8, 8)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)

@@ -1,5 +1,10 @@
 package controleatleta;
 
+/*
+ * Premiacao.java
+ * Fonte: Material de técnicas de programação -> FGA_UnB
+ * Professor: Paulo Meirelles
+ */
 public class Premiacao {
 
     private String titulo;

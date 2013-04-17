@@ -7,6 +7,8 @@
  * CadastroTelefone1.java
  *
  * Created on 18/10/2011, 20:16:05
+ * Fonte: Material de técnicas de programação -> FGA_UnB
+ * Professor: Paulo Meirelles
  */
 package controleatleta;
 
@@ -53,7 +55,6 @@ public class CadastroTelefone extends javax.swing.JDialog {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -69,7 +70,6 @@ public class CadastroTelefone extends javax.swing.JDialog {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 68, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addGap(8, 8, 8)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
