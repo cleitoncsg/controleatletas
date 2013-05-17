@@ -1,10 +1,6 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package br.unb_fga.enxadrista.view;
-
-
+import br.unb_fga.enxadrista.util.Constantes;
 import br.unb_fga.enxadrista.model.Enxadrista;
 import br.unb_fga.enxadrista.model.Endereco;
 import br.unb_fga.enxadrista.control.ControleEnxadrista;
@@ -27,12 +23,7 @@ import javax.swing.table.DefaultTableModel;
  */
 public class CadastroEnxadrista extends javax.swing.JFrame {
     
-    private final byte SEXO_MASCULINO_INDICE = 0;
-    private final byte SEXO_FEMININO_INDICE = 1;
-    private final char SEXO_MASCULINO_VALOR = 'M';
-    private final char SEXO_FEMININO_VALOR = 'F';
-    private final byte JOGADA_NINJA = 0;
-    private final byte NIVEL_OBSERVACAO = 1;
+    
     private DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
     private ControleEnxadrista controleEnxadrista;
     private Enxadrista novoEnxadrista;
@@ -41,6 +32,7 @@ public class CadastroEnxadrista extends javax.swing.JFrame {
     private DefaultListModel telefonesListModel;
     private DefaultListModel enxadristaListModel;
     private boolean experiencia;
+    
     
     public CadastroEnxadrista() {
 
