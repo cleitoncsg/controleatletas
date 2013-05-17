@@ -1,6 +1,7 @@
 
 package br.unb_fga.enxadrista.view;
 import br.unb_fga.enxadrista.util.Constantes;
+
 import br.unb_fga.enxadrista.model.Enxadrista;
 import br.unb_fga.enxadrista.model.Endereco;
 import br.unb_fga.enxadrista.control.ControleEnxadrista;
@@ -33,6 +34,8 @@ public class CadastroEnxadrista extends javax.swing.JFrame {
     private DefaultListModel enxadristaListModel;
     private boolean experiencia;
     
+    Constantes constantes = new Constantes();
+    
     
     public CadastroEnxadrista() {
 
@@ -45,7 +48,7 @@ public class CadastroEnxadrista extends javax.swing.JFrame {
         this.jListEnxadristas.setModel(enxadristaListModel);
         this.jTableListaEnxadristas.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
     }
-
+    
     private void limparCampos() {
         jTextFieldAltura.setText("0.0");
         jTextFieldBairro.setText(null);
@@ -118,11 +121,11 @@ public class CadastroEnxadrista extends javax.swing.JFrame {
         }
 
         switch (novoEnxadrista.getSexo()) {
-            case SEXO_MASCULINO_VALOR:
-                jComboBoxSexo.setSelectedIndex(SEXO_MASCULINO_INDICE);
+            case 'M':
+                jComboBoxSexo.setSelectedIndex(constantes.getSEXO_MASCULINO_INDICE());
                 break;
-            case SEXO_FEMININO_VALOR:
-                jComboBoxSexo.setSelectedIndex(SEXO_FEMININO_INDICE);
+            case 'F':
+                jComboBoxSexo.setSelectedIndex(constantes.getSEXO_FEMININO_INDICE());
                 break;
         }
         
@@ -272,19 +275,19 @@ public class CadastroEnxadrista extends javax.swing.JFrame {
  
 
         switch (jComboBoxSexo.getSelectedIndex()) {
-            case SEXO_MASCULINO_INDICE:
-                novoEnxadrista.setSexo(SEXO_MASCULINO_VALOR);
+            case 'M':
+                novoEnxadrista.setSexo(constantes.getSEXO_MASCULINO_VALOR());
                 break;
-            case SEXO_FEMININO_INDICE:
-                novoEnxadrista.setSexo(SEXO_FEMININO_VALOR);
+            case 'F':
+                novoEnxadrista.setSexo(constantes.getSEXO_FEMININO_VALOR());
                 break;
         }
         
         switch (jComboBoxPosicao.getSelectedIndex()) {
-           case NIVEL_OBSERVACAO:
+           case 1:
                 novoEnxadrista.setNivelObservacao(Double.NaN);
                 break;
-            case JOGADA_NINJA:
+            case 2:
                 novoEnxadrista.setJogadasNinjas(NORMAL);
                 break;
            
@@ -1050,7 +1053,6 @@ private void jTableListaEnxadristasMouseClicked(java.awt.event.MouseEvent evt) {
     private javax.swing.JTextField jTextFieldRg;
     private javax.swing.JTextField jTextFieldRepresenta;
     // End of variables declaration                    
-
 
 }
 

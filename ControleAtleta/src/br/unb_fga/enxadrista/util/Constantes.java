@@ -19,8 +19,6 @@ public class Constantes {
         
     }
 
-    
-    
     public byte getSEXO_MASCULINO_INDICE() {
         return SEXO_MASCULINO_INDICE;
     }
