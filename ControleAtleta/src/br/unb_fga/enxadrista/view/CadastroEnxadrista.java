@@ -977,7 +977,9 @@ private void jTableListaEnxadristasMouseClicked(java.awt.event.MouseEvent evt) {
         if (jListEnxadristas.getSelectedIndex() != -1) {
         enxadristaListModel.removeElementAt(jListEnxadristas.getSelectedIndex());
         }
-    }                                                  
+    } 
+    
+    
 
     // Variables declaration - do not modify                     
     private javax.swing.ButtonGroup buttonGroupParticipacao;
