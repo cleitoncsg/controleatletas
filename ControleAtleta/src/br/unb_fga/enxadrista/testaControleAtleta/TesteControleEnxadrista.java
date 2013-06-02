@@ -2,7 +2,7 @@ package br.unb_fga.enxadrista.testaControleAtleta;
 import br.unb_fga.enxadrista.model.Enxadrista;
 import static org.junit.Assert.assertNotNull;
 
-public class TestarControleEnxadrista{
+public class TesteControleEnxadrista{
 
 	private Enxadrista enxadrista;
 
